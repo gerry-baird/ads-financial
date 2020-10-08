@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Preprocessing">
+  <name>preprocessing</name>
+  <uuid>94e235bd-6dc4-441e-82ff-fe10dbfbb56b</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#2243b23a-c23f-42f7-be2e-406cb98cdcc9"/>
+  <targetRuleProject href="../../Preprocessing#cdbb2de1-63ea-4706-a8a6-7455480da321"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

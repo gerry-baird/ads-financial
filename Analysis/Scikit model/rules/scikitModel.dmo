@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>scikitModel</name>
+  <uuid>dbb011be-3282-4957-bad2-9d339f70f754</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="scikitModel" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Input">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="Input"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Input" typeRef="java.lang.Long"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="Input"/>
+                <output bomType="decisions.financial.analysis.scikitModel.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/Copy.drl" kind="BusinessRule" name="Copy"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.financial.analysis.scikitModel.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="decisions.financial.analysis.scikitModel.Input" collection="false" name="Input mapping"/>
+                <output bomType="decisions.financial.analysis.scikitModel.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="scikitModel.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_ii" name="ML model invocation" typeRef="decisions.financial.analysis.scikitModel.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="decisions.financial.analysis.scikitModel.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.Double" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/Copy%20Result.drl" kind="BusinessRule" name="Copy Result"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#output"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

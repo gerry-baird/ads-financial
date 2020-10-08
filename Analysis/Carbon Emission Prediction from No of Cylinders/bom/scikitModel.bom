@@ -1,0 +1,66 @@
+
+package decisions.financial.analysis.scikitModel;
+
+
+public class Input
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{values}"
+        property "de.generated" "true"
+{
+    public java.lang.Long values
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "values";
+    public Input(java.lang.Long values)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input()
+                property "dataio.default" "true";
+}
+
+public class Output
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+            ignoreUnknown "true"
+        }
+        property "de.generated" "true"
+{
+    public string errorCode
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error_code";
+    public string errorMessage
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error_message";
+    public boolean inError
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "in_error";
+    public object prediction
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
+    public java.lang.Double probability
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "probability";
+    public Output(string errorCode, string errorMessage, boolean inError, object prediction, java.lang.Double probability)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Output()
+                property "dataio.default" "true";
+    public static Output run(decisions.financial.analysis.scikitModel.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.wml.xom.PredictionCallGenerator",
+                    $target "BOM",
+                    deploymentId "d37742ca-5821-4f19-9b14-cc85875d5ed3",
+                    providerName "decisions/Financial/Gerrys Watson ML"
+                }
+                property pureFunction "true";
+    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.financial.analysis.scikitModel.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.wml.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    deploymentId "d37742ca-5821-4f19-9b14-cc85875d5ed3",
+                    providerName "decisions/Financial/Gerrys Watson ML"
+                }
+                property pureFunction "true";
+}
+

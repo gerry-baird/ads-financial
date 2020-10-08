@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="scikitModel" targetRuleProjectName="Carbon Emission Prediction from No of Cylinders">
+  <name>carbonEmissionPredictionFromNoOfCylinders</name>
+  <uuid>8ff44f0a-22be-449d-a2f8-08f745b726c9</uuid>
+  <decisionModel href="../rules/scikitModel.dmo#46d14514-bbe3-4dec-8b66-d85b4d8432d0"/>
+  <targetRuleProject href="../../Carbon%20Emission%20Prediction%20from%20No%20of%20Cylinders#f92a7d5b-c837-49dc-9ff5-45c691321aca"/>
+  <tags key="ProviderType">
+    <value><![CDATA[WML]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

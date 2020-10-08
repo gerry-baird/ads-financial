@@ -8,7 +8,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>Carbon Emission Prediction from No of Cylinders</module>
         <module>FinancialData</module>
+        <module>Preprocessing</module>
+        <module>Scikit model</module>
         <module>StatementType</module>
         <module>.decisionservice</module>
     </modules>

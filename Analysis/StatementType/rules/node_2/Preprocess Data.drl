@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Preprocess Data</name>
+  <uuid>17cc7f5e-29de-40ba-a8f8-daf108041b96</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set 'processed items' to the preprocessings computed from 
+    Input being 'Input Data';
+if 'processed items' are defined  
+then  print "Pre processing completed with adjustments"; 
+else print "Pre processing completed without adjustment";
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

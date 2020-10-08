@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Copy Result</name>
+  <uuid>df8015b2-c37a-4464-943a-dd5d30e045f2</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+    set 'emmisions' to 99; 
+
+then set decision to emmisions ;  
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
