@@ -1,7 +1,7 @@
 {
   "fields" : [ {
     "name" : "values",
-    "type" : "integer",
+    "type" : "int",
     "nullable" : true
   } ]
 }

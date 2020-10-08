@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="decisions.financial.analysis:carbonEmissionPredictionFromNoOfCylinders" ruleAppVersion="LATEST-SNAPSHOT" packageName="decisions.financial.analysis.scikitModel" managingXom="true">
-  <name>carbonEmissionPredictionFromNoOfCylinders</name>
-  <uuid>5b0f4fb6-fc02-480a-ac73-1e373e52ecda</uuid>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="decisions.financial.analysis:scikitModel" ruleAppVersion="LATEST-SNAPSHOT" packageName="decisions.financial.analysis.scikitModel" managingXom="true">
+  <name>scikitModel</name>
+  <uuid>ac76f68f-e038-4124-a75f-4b4cb791f10b</uuid>
   <locales>en_US</locales>
   <operations operationName="scikitModel">
-    <operation href="scikitModel.dop#8ff44f0a-22be-449d-a2f8-08f745b726c9"/>
+    <operation href="scikitModel.dop#d0614340-51d5-4db8-913f-bfde82ea2454"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>scikitModel</name>
-  <uuid>46d14514-bbe3-4dec-8b66-d85b4d8432d0</uuid>
+  <uuid>eefabefd-e70c-4fc2-9083-b4c8f02d7fcf</uuid>
   <locale>en_US</locale>
   <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="scikitModel" namespace="">
     <extensionElements>
@@ -10,17 +10,18 @@
     <inputData id="input" name="Input type">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.String" collection="false" name="Input type"/>
+                <output bomType="java.lang.Long" collection="false" name="Input type"/>
             </initialization>
         </extensionElements>
-        <variable id="input_ii" name="Input type" typeRef="java.lang.String"/>
+        <variable id="input_ii" name="Input type" typeRef="java.lang.Long"/>
     </inputData>
     <decision id="input-mapping" name="Input mapping">
         <description>ML model input</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.String" collection="false" name="Input type"/>
+                <input bomType="java.lang.Long" collection="false" name="Input type"/>
                 <output bomType="decisions.financial.analysis.scikitModel.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/Map.drl" kind="BusinessRule" name="Map"/>
             </ruleset>
         </extensionElements>
         <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.financial.analysis.scikitModel.Input"/>
@@ -46,10 +47,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="decisions.financial.analysis.scikitModel.Output" collection="false" name="ML model invocation"/>
-                <output bomType="java.lang.String" collection="false" name="Output mapping"/>
+                <output bomType="java.lang.Double" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/Map%20Output.drl" kind="BusinessRule" name="Map Output"/>
             </ruleset>
         </extensionElements>
-        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.String"/>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#output"/>
         </informationRequirement>

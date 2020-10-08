@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.financial.analysis</groupId>
-    <artifactId>carbonEmissionPredictionFromNoOfCylinders</artifactId>
+    <artifactId>scikitModel</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -21,7 +21,7 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>carbonEmissionPredictionFromNoOfCylinders</name>
+                            <name>scikitModel</name>
                         </deployment>
                     </deployments>
                 <packageName>decisions.financial.analysis.scikitModel</packageName>

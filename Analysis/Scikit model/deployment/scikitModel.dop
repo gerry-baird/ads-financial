@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="scikitModel" targetRuleProjectName="Scikit model">
+  <name>scikitModel</name>
+  <uuid>d0614340-51d5-4db8-913f-bfde82ea2454</uuid>
+  <decisionModel href="../rules/scikitModel.dmo#eefabefd-e70c-4fc2-9083-b4c8f02d7fcf"/>
+  <targetRuleProject href="../../Scikit%20model#17ec681d-d938-4997-8b95-1056fd3b9afa"/>
+  <tags key="ProviderType">
+    <value><![CDATA[WML]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
