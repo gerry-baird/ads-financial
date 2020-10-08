@@ -34,7 +34,7 @@ public class Output
     public boolean inError
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "in_error";
-    public java.lang.Double[] prediction
+    public object prediction
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
     public java.lang.Double probability
