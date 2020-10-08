@@ -28,11 +28,6 @@
         </dependency>
         <dependency>
             <groupId>decisions.financial.analysis</groupId>
-            <artifactId>scikitModel</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>decisions.financial.analysis</groupId>
             <artifactId>statementType</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
@@ -84,15 +79,6 @@
                                 <artifactItem>
                                     <groupId>decisions.financial.analysis</groupId>
                                     <artifactId>preprocessing</artifactId>
-                                    <version>LATEST-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <includes>**/*.class</includes>
-                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>decisions.financial.analysis</groupId>
-                                    <artifactId>scikitModel</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

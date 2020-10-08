@@ -1,8 +1,0 @@
-{
-  "id" : "default_schema_id",
-  "fields" : [ {
-    "name" : "prediction",
-    "type" : "object",
-    "nullable" : true
-  } ]
-}
