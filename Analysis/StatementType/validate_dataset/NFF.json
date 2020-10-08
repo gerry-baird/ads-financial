@@ -1,0 +1,27 @@
+{
+  "inputData": [
+    {
+      "documentID": "49888359",
+      "pageNumber": 1,
+      "tableIndex": 1,
+      "finStmtType": "",
+      "nameSection": "Assets",
+      "asReportedDescription": "Cash and cash equivalents",
+      "editedDescription": "Cash and cash equivalents",
+      "lineItemValue": 90503,
+      "reportedValue": 90503,
+      "filingLength": 12,
+      "dateUnit": "Months",
+      "negativeFlag": "F",
+      "tableName": "Consolidated Statements of Financial Position",
+      "currency": "USD",
+      "periodicity": "Annual",
+      "tableID": 2,
+      "rowID": 28,
+      "market": "CAN",
+      "presentationFormat": "",
+      "mainTableForeignKey": -1,
+      "statementDate": "2020-10-08"
+    }
+  ]
+}

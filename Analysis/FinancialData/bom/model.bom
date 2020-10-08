@@ -1,0 +1,119 @@
+
+
+public class FinancialStatementItem
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Financial Statement Item"
+        property "de.generated" "true"
+{
+    public string asReportedDescription
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "asReportedDescription"
+                property update "true";
+    public string currency
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "currency"
+                property update "true";
+    public string dateUnit
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "dateUnit"
+                property update "true";
+    public string documentID
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "documentID"
+                property update "true";
+    public string editedDescription
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "editedDescription"
+                property update "true";
+    public string finStmtType
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "finStmtType"
+                property update "true";
+    public double lineItemValue
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "lineItemValue"
+                property update "true";
+    public string market
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "market"
+                property update "true";
+    public string nameSection
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "nameSection"
+                property update "true";
+    public string negativeFlag
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "negativeFlag"
+                property update "true";
+    public double newAttribute
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "reportedValue"
+                property update "true";
+    public double newAttribute1
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "filingLength"
+                property update "true";
+    public double newAttribute2
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tableID"
+                property update "true";
+    public double newAttribute3
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rowID"
+                property update "true";
+    public double newAttribute4
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "mainTableForeignKey"
+                property update "true";
+    public string pageNumber1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "pageNumber"
+                property update "true";
+    public string periodicity
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "periodicity"
+                property update "true";
+    public string presentationFormat
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "presentationFormat"
+                property update "true";
+    public ilog.rules.brl.SimpleDate statementDate
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "statementDate"
+                property update "true";
+    public double tableIndex
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tableIndex"
+                property update "true";
+    public string tableName
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tableName"
+                property update "true";
+    public FinancialStatementItem(string asReportedDescription, 
+        string currency, 
+        string dateUnit, 
+        string documentID, 
+        string editedDescription, 
+        string finStmtType, 
+        double lineItemValue, 
+        string market, 
+        string nameSection, 
+        string negativeFlag, 
+        double newAttribute, 
+        double newAttribute1, 
+        double newAttribute2, 
+        double newAttribute3, 
+        double newAttribute4, 
+        string pageNumber1, 
+        string periodicity, 
+        string presentationFormat, 
+        ilog.rules.brl.SimpleDate statementDate, 
+        double tableIndex, 
+        string tableName)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public FinancialStatementItem()
+                property "dataio.default" "true";
+}
+
