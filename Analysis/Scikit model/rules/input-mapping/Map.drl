@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Map</name>
-  <uuid>6f8bef3a-147b-47f5-a4e5-36d4ab72d81c</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[set decision to a new ML model input where
-        the values is 'Input type' ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

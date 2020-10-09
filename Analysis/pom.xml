@@ -10,7 +10,6 @@
     <modules>
         <module>FinancialData</module>
         <module>Preprocessing</module>
-        <module>Scikit model</module>
         <module>StatementType</module>
         <module>.decisionservice</module>
     </modules>
