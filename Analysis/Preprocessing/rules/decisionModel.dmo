@@ -20,6 +20,7 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="FinancialStatementItem" collection="true" name="Input"/>
                 <output bomType="FinancialStatementItem" collection="true" name="Decision"/>
+                <rule defaultRule="false" href="node_1/Copy%20Inputs%20to%20Outputs.drl" kind="BusinessRule" name="Copy Inputs to Outputs"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="FinancialStatementItem[]"/>
