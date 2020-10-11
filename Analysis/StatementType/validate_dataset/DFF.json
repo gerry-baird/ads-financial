@@ -21,7 +21,15 @@
       "market": "CAN",
       "presentationFormat": "",
       "mainTableForeignKey": -1,
-      "statementDate": "2020-10-08"
+      "statementDate": "2020-10-08",
+"fccCoding": "",
+      "financial": 0,
+      "industrial": 0,
+      "investment": 0,
+      "encodedDescription": 12,
+      "insurance": 0,
+      "bank": 3,
+      "property": 0
     }
   ]
 }
