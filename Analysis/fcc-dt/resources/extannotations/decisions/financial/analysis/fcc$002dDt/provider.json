@@ -1,0 +1,9 @@
+{
+  "name" : "decisions/Financial/OPS",
+  "type" : "EML",
+  "description" : "",
+  "mlUrl" : "http://ads-ml-ads-ml-service.ads-cluster-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/",
+  "authUrl" : "",
+  "instanceId" : "",
+  "apiKey" : null
+}

@@ -27,6 +27,11 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>decisions.financial.analysis</groupId>
+            <artifactId>fcc-Dt</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>2.4.0</version>
@@ -74,6 +79,15 @@
                                 <artifactItem>
                                     <groupId>decisions.financial.analysis</groupId>
                                     <artifactId>statementType</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>decisions.financial.analysis</groupId>
+                                    <artifactId>fcc-Dt</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

@@ -11,6 +11,7 @@
         <module>FinancialData</module>
         <module>Preprocessing</module>
         <module>StatementType</module>
+        <module>fcc-dt</module>
         <module>.decisionservice</module>
     </modules>
 

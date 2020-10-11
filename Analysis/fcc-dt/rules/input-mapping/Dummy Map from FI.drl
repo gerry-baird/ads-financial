@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Dummy Map from FI</name>
+  <uuid>b6dda04f-47fc-4417-ae2f-1e16959c9b00</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+        the bank is 3, 
+        the encodeddescription is 14, 
+        the financial is 7, 
+        the industrial is 0, 
+        the insurance is 2, 
+        the investment is 6, 
+        the property is 0 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

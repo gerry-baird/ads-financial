@@ -1,7 +1,7 @@
 
 # FinancialStatementItem
 FinancialStatementItem#concept.label = Financial Statement Item
-FinancialStatementItem.FinancialStatementItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,double,java.lang.String,java.lang.String,java.lang.String,double,double,double,double,double,java.lang.String,java.lang.String,java.lang.String,ilog.rules.brl.SimpleDate,double,java.lang.String)#phrase.navigation = a new {Financial Statement Item} where {0, asReportedDescription} {1, currency} {2, dateUnit} {3, documentID} {4, editedDescription} {5, finStmtType} {6, lineItemValue} {7, market} {8, nameSection} {9, negativeFlag} {10, reportedValue} {11, filingLength} {12, tableID} {13, rowID} {14, mainTableForeignKey} {15, pageNumber} {16, periodicity} {17, presentationFormat} {18, statementDate} {19, tableIndex} {20, tableName}
+FinancialStatementItem.FinancialStatementItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.lang.Long,java.lang.Long,double,java.lang.String,java.lang.String,java.lang.String,double,double,double,double,double,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,ilog.rules.brl.SimpleDate,double,java.lang.String)#phrase.navigation = a new {Financial Statement Item} where {0, asReportedDescription} {1, currency} {2, dateUnit} {3, documentID} {4, editedDescription} {5, finStmtType} {6, financial} {7, industrial} {8, investment} {9, lineItemValue} {10, market} {11, nameSection} {12, negativeFlag} {13, reportedValue} {14, filingLength} {15, tableID} {16, rowID} {17, mainTableForeignKey} {18, encodedDescription} {19, insurance} {20, bank} {21, property} {22, pageNumber} {23, periodicity} {24, presentationFormat} {25, statementDate} {26, tableIndex} {27, tableName}
 FinancialStatementItem.asReportedDescription#phrase.action = set the asReportedDescription of {this} to {asReportedDescription}
 FinancialStatementItem.asReportedDescription#phrase.navigation = {asReportedDescription} of {this}
 FinancialStatementItem.currency#phrase.action = set the currency of {this} to {currency}
@@ -14,6 +14,12 @@ FinancialStatementItem.editedDescription#phrase.action = set the editedDescripti
 FinancialStatementItem.editedDescription#phrase.navigation = {editedDescription} of {this}
 FinancialStatementItem.finStmtType#phrase.action = set the finStmtType of {this} to {finStmtType}
 FinancialStatementItem.finStmtType#phrase.navigation = {finStmtType} of {this}
+FinancialStatementItem.financial#phrase.action = set the financial of {this} to {financial}
+FinancialStatementItem.financial#phrase.navigation = {financial} of {this}
+FinancialStatementItem.industrial#phrase.action = set the industrial of {this} to {industrial}
+FinancialStatementItem.industrial#phrase.navigation = {industrial} of {this}
+FinancialStatementItem.investment#phrase.action = set the investment of {this} to {investment}
+FinancialStatementItem.investment#phrase.navigation = {investment} of {this}
 FinancialStatementItem.lineItemValue#phrase.action = set the lineItemValue of {this} to {lineItemValue}
 FinancialStatementItem.lineItemValue#phrase.navigation = {lineItemValue} of {this}
 FinancialStatementItem.market#phrase.action = set the market of {this} to {market}
@@ -32,6 +38,14 @@ FinancialStatementItem.newAttribute3#phrase.action = set the rowID of {this} to 
 FinancialStatementItem.newAttribute3#phrase.navigation = {rowID} of {this}
 FinancialStatementItem.newAttribute4#phrase.action = set the mainTableForeignKey of {this} to {mainTableForeignKey}
 FinancialStatementItem.newAttribute4#phrase.navigation = {mainTableForeignKey} of {this}
+FinancialStatementItem.newAttribute5#phrase.action = set the encodedDescription of {this} to {encodedDescription}
+FinancialStatementItem.newAttribute5#phrase.navigation = {encodedDescription} of {this}
+FinancialStatementItem.newAttribute6#phrase.action = set the insurance of {this} to {insurance}
+FinancialStatementItem.newAttribute6#phrase.navigation = {insurance} of {this}
+FinancialStatementItem.newAttribute7#phrase.action = set the bank of {this} to {bank}
+FinancialStatementItem.newAttribute7#phrase.navigation = {bank} of {this}
+FinancialStatementItem.newAttribute8#phrase.action = set the property of {this} to {property}
+FinancialStatementItem.newAttribute8#phrase.navigation = {property} of {this}
 FinancialStatementItem.pageNumber1#phrase.action = set the pageNumber of {this} to {pageNumber}
 FinancialStatementItem.pageNumber1#phrase.navigation = {pageNumber} of {this}
 FinancialStatementItem.periodicity#phrase.action = set the periodicity of {this} to {periodicity}

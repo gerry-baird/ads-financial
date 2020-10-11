@@ -1,0 +1,33 @@
+
+# decisions.financial.analysis.fcc$002dDt.Input
+decisions.financial.analysis.fcc$002dDt.Input#concept.label = ML model input
+decisions.financial.analysis.fcc$002dDt.Input.Input(long,long,long,long,long,long,long)#phrase.navigation = a new {ML model input} where {0, bank} {1, encodeddescription} {2, financial} {3, industrial} {4, insurance} {5, investment} {6, property} 
+decisions.financial.analysis.fcc$002dDt.Input.bank#phrase.action = set the bank of {this} to {bank}
+decisions.financial.analysis.fcc$002dDt.Input.bank#phrase.navigation = {bank} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.encodeddescription#phrase.action = set the encodeddescription of {this} to {encodeddescription}
+decisions.financial.analysis.fcc$002dDt.Input.encodeddescription#phrase.navigation = {encodeddescription} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.financial#phrase.action = set the financial of {this} to {financial}
+decisions.financial.analysis.fcc$002dDt.Input.financial#phrase.navigation = {financial} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.industrial#phrase.action = set the industrial of {this} to {industrial}
+decisions.financial.analysis.fcc$002dDt.Input.industrial#phrase.navigation = {industrial} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.insurance#phrase.action = set the insurance of {this} to {insurance}
+decisions.financial.analysis.fcc$002dDt.Input.insurance#phrase.navigation = {insurance} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.investment#phrase.action = set the investment of {this} to {investment}
+decisions.financial.analysis.fcc$002dDt.Input.investment#phrase.navigation = {investment} of {this}
+decisions.financial.analysis.fcc$002dDt.Input.property#phrase.action = set the property of {this} to {property}
+decisions.financial.analysis.fcc$002dDt.Input.property#phrase.navigation = {property} of {this}
+
+# decisions.financial.analysis.fcc$002dDt.Output
+decisions.financial.analysis.fcc$002dDt.Output#concept.label = ML model output
+decisions.financial.analysis.fcc$002dDt.Output.Output(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.Double)#phrase.navigation = a new {ML model output} where {0, error code} {1, error message} {2, in error} {3, prediction} {4, probability} 
+decisions.financial.analysis.fcc$002dDt.Output.errorCode#phrase.action = set the error code of {this} to {error code}
+decisions.financial.analysis.fcc$002dDt.Output.errorCode#phrase.navigation = {error code} of {this}
+decisions.financial.analysis.fcc$002dDt.Output.errorMessage#phrase.action = set the error message of {this} to {error message}
+decisions.financial.analysis.fcc$002dDt.Output.errorMessage#phrase.navigation = {error message} of {this}
+decisions.financial.analysis.fcc$002dDt.Output.inError#phrase.action = make it {in error} that {this} is in error
+decisions.financial.analysis.fcc$002dDt.Output.inError#phrase.navigation = {this} is in error
+decisions.financial.analysis.fcc$002dDt.Output.prediction#phrase.action = set the prediction of {this} to {prediction}
+decisions.financial.analysis.fcc$002dDt.Output.prediction#phrase.navigation = {prediction} of {this}
+decisions.financial.analysis.fcc$002dDt.Output.probability#phrase.action = set the probability of {this} to {probability}
+decisions.financial.analysis.fcc$002dDt.Output.probability#phrase.navigation = {probability} of {this}
+decisions.financial.analysis.fcc$002dDt.Output.run(decisions.financial.analysis.fcc$002dDt.Input)#phrase.navigation = predict({0})

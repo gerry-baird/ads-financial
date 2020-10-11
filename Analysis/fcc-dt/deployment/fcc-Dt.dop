@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="fcc-Dt" targetRuleProjectName="fcc-dt">
+  <name>fcc-Dt</name>
+  <uuid>42a82263-4e6f-4c26-9521-b32a1f848185</uuid>
+  <decisionModel href="../rules/fcc-Dt.dmo#8156fc78-d689-4e58-8f99-16ed79341645"/>
+  <targetRuleProject href="../../fcc-dt#13ae4a82-e2e4-40fc-82e7-9528dbec1e41"/>
+  <tags key="ProviderType">
+    <value><![CDATA[EML]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

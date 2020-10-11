@@ -29,6 +29,18 @@ public class FinancialStatementItem
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "finStmtType"
                 property update "true";
+    public java.lang.Long financial
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "financial"
+                property update "true";
+    public java.lang.Long industrial
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "industrial"
+                property update "true";
+    public java.lang.Long investment
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "investment"
+                property update "true";
     public double lineItemValue
                 property "ads.attributeId" "8"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "lineItemValue"
@@ -65,6 +77,22 @@ public class FinancialStatementItem
                 property "ads.attributeId" "20"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "mainTableForeignKey"
                 property update "true";
+    public java.lang.Long newAttribute5
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "encodedDescription"
+                property update "true";
+    public java.lang.Long newAttribute6
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "insurance"
+                property update "true";
+    public java.lang.Long newAttribute7
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "bank"
+                property update "true";
+    public java.lang.Long newAttribute8
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "property"
+                property update "true";
     public string pageNumber1
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "pageNumber"
@@ -95,6 +123,9 @@ public class FinancialStatementItem
         string documentID, 
         string editedDescription, 
         string finStmtType, 
+        java.lang.Long financial, 
+        java.lang.Long industrial, 
+        java.lang.Long investment, 
         double lineItemValue, 
         string market, 
         string nameSection, 
@@ -104,6 +135,10 @@ public class FinancialStatementItem
         double newAttribute2, 
         double newAttribute3, 
         double newAttribute4, 
+        java.lang.Long newAttribute5, 
+        java.lang.Long newAttribute6, 
+        java.lang.Long newAttribute7, 
+        java.lang.Long newAttribute8, 
         string pageNumber1, 
         string periodicity, 
         string presentationFormat, 
