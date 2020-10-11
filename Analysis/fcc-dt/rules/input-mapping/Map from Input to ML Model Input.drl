@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Map from Input to ML Model Input</name>
+  <uuid>b6dda04f-47fc-4417-ae2f-1e16959c9b00</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+        the bank is the bank of 'Financial Item to Classify' ,
+        the encodeddescription is the encodedDescription of 'Financial Item to Classify' , 
+        the financial is the financial of 'Financial Item to Classify' , 
+        the industrial is the industrial of 'Financial Item to Classify' , 
+        the insurance is the insurance of 'Financial Item to Classify' , 
+        the investment is the investment of 'Financial Item to Classify' , 
+        the property is the property of 'Financial Item to Classify'  ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -21,7 +21,7 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="FinancialStatementItem" collection="false" name="Financial Item to Classify"/>
                 <output bomType="decisions.financial.analysis.fcc$002dDt.Input" collection="false" name="Input mapping"/>
-                <rule defaultRule="false" href="input-mapping/Dummy%20Map%20from%20FI.drl" kind="BusinessRule" name="Dummy Map from FI"/>
+                <rule defaultRule="false" href="input-mapping/Map%20from%20Input%20to%20ML%20Model%20Input.drl" kind="BusinessRule" name="Map from Input to ML Model Input"/>
             </ruleset>
         </extensionElements>
         <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.financial.analysis.fcc$002dDt.Input"/>

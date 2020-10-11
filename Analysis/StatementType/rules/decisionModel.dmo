@@ -44,6 +44,7 @@
                 <input bomType="java.lang.String" collection="false" name="Cash Flow"/>
                 <output bomType="FinancialStatementItem" collection="true" name="Processed Items"/>
                 <rule defaultRule="false" href="node_3/Copy%20Inputs%20to%20Outputs.drl" kind="BusinessRule" name="Copy Inputs to Outputs"/>
+                <rule defaultRule="false" href="node_3/Lookup%20FCC.drl" kind="BusinessRule" name="Lookup FCC"/>
             </ruleset>
         </extensionElements>
         <variable id="node_3_ii" name="Processed Items" typeRef="FinancialStatementItem[]"/>
@@ -56,6 +57,9 @@
         <informationRequirement>
             <requiredInput href="#node_5"/>
         </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_8"/>
+        </knowledgeRequirement>
     </decision>
     <decision id="node_4" name="Income Statements">
         <extensionElements>
@@ -116,6 +120,31 @@
                     <variable name="method signature"/>
                     <literalExpression>
                         <text>"run(java.util.List)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_8" name="fcc-dt">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.prediction"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="fcc-dt" typeRef="java.lang.String"/>
+        <encapsulatedLogic typeRef="java.lang.String">
+            <formalParameter name="financialItemToClassify" typeRef="FinancialStatementItem"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.financial.analysis.fcc$002dDt.Fcc_Dt"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(FinancialStatementItem)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>

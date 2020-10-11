@@ -6,8 +6,8 @@
       "tableIndex": 1,
       "finStmtType": "",
       "nameSection": "ASSETS|CURRENT ASSETS",
-      "asReportedDescription": "Cash and cash equivalents",
-      "editedDescription": "Cash and cash equivalents",
+      "asReportedDescription": "Segregated - Cash Deposits",
+      "editedDescription": "Segregated - Cash Deposits",
       "lineItemValue": 90503,
       "reportedValue": 90503,
       "filingLength": 12,
@@ -24,11 +24,11 @@
       "statementDate": "2020-10-08",
       "fccCoding": "",
       "financial": 7,
-      "industrial": 0,
-      "investment": 6,
+      "industrial": 1,
+      "investment": 0,
       "encodedDescription": 14,
-      "insurance": 2,
-      "bank": 3,
+      "insurance": 0,
+      "bank": 0,
       "property": 0
     }
   ]

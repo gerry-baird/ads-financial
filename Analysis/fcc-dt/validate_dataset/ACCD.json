@@ -1,0 +1,14 @@
+{
+  "financialItemToClassify": {
+    "financial": 7,
+    "finStmtType": "",
+    "asReportedDescription": "",
+    "encodedDescription": 16,
+    "fccCoding": "",
+    "investment": 0,
+    "insurance": 0,
+    "bank": 0,
+    "property": 0,
+    "industrial": 1
+  }
+}

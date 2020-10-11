@@ -25,9 +25,9 @@ public class FinancialStatementItem
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "editedDescription"
                 property update "true";
-    public string fccCode
+    public string fccCoding
                 property "ads.attributeId" "29"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "fccCode"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "fccCoding"
                 property update "true";
     public string finStmtType
                 property "ads.attributeId" "4"
@@ -126,6 +126,7 @@ public class FinancialStatementItem
         string dateUnit, 
         string documentID, 
         string editedDescription, 
+        string fccCoding, 
         string finStmtType, 
         java.lang.Long financial, 
         java.lang.Long industrial, 
@@ -143,7 +144,6 @@ public class FinancialStatementItem
         java.lang.Long newAttribute6, 
         java.lang.Long newAttribute7, 
         java.lang.Long newAttribute8, 
-        string fccCode, 
         string pageNumber1, 
         string periodicity, 
         string presentationFormat, 

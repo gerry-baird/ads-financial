@@ -50,5 +50,11 @@
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>decisions.financial.analysis</groupId>
+            <artifactId>fcc-Dt</artifactId>
+            <type>decision-library</type>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
