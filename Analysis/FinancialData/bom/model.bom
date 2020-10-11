@@ -25,6 +25,10 @@ public class FinancialStatementItem
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "editedDescription"
                 property update "true";
+    public string fccCode
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "fccCode"
+                property update "true";
     public string finStmtType
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "finStmtType"
@@ -139,6 +143,7 @@ public class FinancialStatementItem
         java.lang.Long newAttribute6, 
         java.lang.Long newAttribute7, 
         java.lang.Long newAttribute8, 
+        string fccCode, 
         string pageNumber1, 
         string periodicity, 
         string presentationFormat, 

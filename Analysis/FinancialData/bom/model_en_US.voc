@@ -1,7 +1,7 @@
 
 # FinancialStatementItem
 FinancialStatementItem#concept.label = Financial Statement Item
-FinancialStatementItem.FinancialStatementItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.lang.Long,java.lang.Long,double,java.lang.String,java.lang.String,java.lang.String,double,double,double,double,double,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,ilog.rules.brl.SimpleDate,double,java.lang.String)#phrase.navigation = a new {Financial Statement Item} where {0, asReportedDescription} {1, currency} {2, dateUnit} {3, documentID} {4, editedDescription} {5, finStmtType} {6, financial} {7, industrial} {8, investment} {9, lineItemValue} {10, market} {11, nameSection} {12, negativeFlag} {13, reportedValue} {14, filingLength} {15, tableID} {16, rowID} {17, mainTableForeignKey} {18, encodedDescription} {19, insurance} {20, bank} {21, property} {22, pageNumber} {23, periodicity} {24, presentationFormat} {25, statementDate} {26, tableIndex} {27, tableName}
+FinancialStatementItem.FinancialStatementItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.lang.Long,java.lang.Long,double,java.lang.String,java.lang.String,java.lang.String,double,double,double,double,double,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,ilog.rules.brl.SimpleDate,double,java.lang.String)#phrase.navigation = a new {Financial Statement Item} where {0, asReportedDescription} {1, currency} {2, dateUnit} {3, documentID} {4, editedDescription} {5, finStmtType} {6, financial} {7, industrial} {8, investment} {9, lineItemValue} {10, market} {11, nameSection} {12, negativeFlag} {13, reportedValue} {14, filingLength} {15, tableID} {16, rowID} {17, mainTableForeignKey} {18, encodedDescription} {19, insurance} {20, bank} {21, property} {22, fccCode} {23, pageNumber} {24, periodicity} {25, presentationFormat} {26, statementDate} {27, tableIndex} {28, tableName}
 FinancialStatementItem.asReportedDescription#phrase.action = set the asReportedDescription of {this} to {asReportedDescription}
 FinancialStatementItem.asReportedDescription#phrase.navigation = {asReportedDescription} of {this}
 FinancialStatementItem.currency#phrase.action = set the currency of {this} to {currency}
@@ -12,6 +12,8 @@ FinancialStatementItem.documentID#phrase.action = set the documentID of {this} t
 FinancialStatementItem.documentID#phrase.navigation = {documentID} of {this}
 FinancialStatementItem.editedDescription#phrase.action = set the editedDescription of {this} to {editedDescription}
 FinancialStatementItem.editedDescription#phrase.navigation = {editedDescription} of {this}
+FinancialStatementItem.fccCode#phrase.action = set the fccCode of {this} to {fccCode}
+FinancialStatementItem.fccCode#phrase.navigation = {fccCode} of {this}
 FinancialStatementItem.finStmtType#phrase.action = set the finStmtType of {this} to {finStmtType}
 FinancialStatementItem.finStmtType#phrase.navigation = {finStmtType} of {this}
 FinancialStatementItem.financial#phrase.action = set the financial of {this} to {financial}
