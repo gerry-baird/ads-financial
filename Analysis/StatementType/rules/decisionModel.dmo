@@ -26,6 +26,7 @@
                 <rule defaultRule="false" href="node_2/Balance%20Sheet%20Tables.dmt" kind="DecisionTable" name="Balance Sheet Tables"/>
                 <rule defaultRule="false" href="node_2/Differentiated.drl" kind="BusinessRule" name="Differentiated"/>
                 <rule defaultRule="false" href="node_2/Parent%20BAL.drl" kind="BusinessRule" name="Parent BAL"/>
+                <rule defaultRule="false" href="node_2/FCC%20Lookup.drl" kind="BusinessRule" name="FCC Lookup"/>
             </ruleset>
         </extensionElements>
         <variable id="node_2_ii" name="Balance Sheets" typeRef="FinancialStatementItem[]"/>
@@ -34,6 +35,9 @@
         </informationRequirement>
         <knowledgeRequirement>
             <requiredKnowledge href="#node_7"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_8"/>
         </knowledgeRequirement>
     </decision>
     <decision id="node_3" name="Processed Items">
@@ -44,7 +48,6 @@
                 <input bomType="java.lang.String" collection="false" name="Cash Flow"/>
                 <output bomType="FinancialStatementItem" collection="true" name="Processed Items"/>
                 <rule defaultRule="false" href="node_3/Copy%20Inputs%20to%20Outputs.drl" kind="BusinessRule" name="Copy Inputs to Outputs"/>
-                <rule defaultRule="false" href="node_3/Lookup%20FCC.drl" kind="BusinessRule" name="Lookup FCC"/>
             </ruleset>
         </extensionElements>
         <variable id="node_3_ii" name="Processed Items" typeRef="FinancialStatementItem[]"/>
@@ -57,9 +60,6 @@
         <informationRequirement>
             <requiredInput href="#node_5"/>
         </informationRequirement>
-        <knowledgeRequirement>
-            <requiredKnowledge href="#node_8"/>
-        </knowledgeRequirement>
     </decision>
     <decision id="node_4" name="Income Statements">
         <extensionElements>

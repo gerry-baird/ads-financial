@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Lookup FCC</name>
-  <uuid>fcc43273-3642-483d-96de-5b6be605076f</uuid>
+  <name>FCC Lookup</name>
+  <uuid>eed58700-e548-4c9c-a867-f71a2eff58ca</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions 
     set 'this item' to a Financial Statement Item in decision ; 
+    set 'fcc code' to the fcc dt computed from Financial Item to Classify being 'this item';
+
+if 'fcc code' is defined and 'fcc code' is not empty 
+
 then
-    set the fccCoding of 'this item' to the fcc dt computed from 
-    Financial Item to Classify being 'this item'; 
+    set the fccCoding of 'this item' to  'fcc code' ;
+else set the fccCoding of 'this item' to "Undefined";  
 ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
