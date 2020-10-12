@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" buildMode="DecisionEngine" isADecisionService="true">
-  <name>StatementType</name>
-  <uuid>14ee92d9-5ae0-42f9-a166-fafbdec0d44e</uuid>
+  <name>fcc-dt-adv</name>
+  <uuid>e19f9650-46bc-4825-b491-a48f091e4f33</uuid>
   <outputLocation>output</outputLocation>
   <categories>any</categories>
   <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
     <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="fcc-Dt-Adv" url="platform:/fcc-dt-adv/bom/fcc-Dt-Adv.bom"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:financialData#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:financialData" version="LATEST-SNAPSHOT"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:preprocessing#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:preprocessing" version="LATEST-SNAPSHOT"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:fcc-Dt-Adv#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:fcc-Dt-Adv" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>
@@ -33,5 +32,4 @@
   <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
     <name>deployment</name>
   </modelFolders>
-  <documentation><![CDATA[]]></documentation>
 </ilog.rules.studio.model.base:RuleProject>

@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.financial.analysis</groupId>
-    <artifactId>statementType</artifactId>
+    <artifactId>fcc-Dt-Adv</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -21,10 +21,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>statementType</name>
+                            <name>fcc-Dt-Adv</name>
                         </deployment>
                     </deployments>
-                <packageName>decisions.financial.analysis.statementtype</packageName>
+                <packageName>decisions.financial.analysis.fcc$002dDt$002dAdv</packageName>
                 </configuration>
             <dependencies>
                     <dependency>
@@ -41,18 +41,6 @@
         <dependency>
             <groupId>decisions.financial.analysis</groupId>
             <artifactId>financialData</artifactId>
-            <type>decision-library</type>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>decisions.financial.analysis</groupId>
-            <artifactId>preprocessing</artifactId>
-            <type>decision-library</type>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>decisions.financial.analysis</groupId>
-            <artifactId>fcc-Dt-Adv</artifactId>
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

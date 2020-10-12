@@ -1,0 +1,11 @@
+{
+  "financialItemToClassify": {
+    "asReportedDescription": "Deposits - Total",
+    "industrial": 0,
+    "insurance": 2,
+    "bank": 3,
+    "property": 0,
+    "investment": 6,
+    "financial": 7
+  }
+}

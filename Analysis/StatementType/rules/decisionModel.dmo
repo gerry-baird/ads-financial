@@ -37,7 +37,7 @@
             <requiredKnowledge href="#node_7"/>
         </knowledgeRequirement>
         <knowledgeRequirement>
-            <requiredKnowledge href="#node_8"/>
+            <requiredKnowledge href="#node_9"/>
         </knowledgeRequirement>
     </decision>
     <decision id="node_3" name="Processed Items">
@@ -125,20 +125,20 @@
             </context>
         </encapsulatedLogic>
     </businessKnowledgeModel>
-    <businessKnowledgeModel id="node_8" name="fcc-dt">
+    <businessKnowledgeModel id="node_9" name="fcc-dt-adv">
         <extensionElements>
             <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
                 <property name="ads.designer.prediction"><![CDATA[true]]></property>
             </properties>
         </extensionElements>
-        <variable name="fcc-dt" typeRef="java.lang.String"/>
+        <variable name="fcc-dt-adv" typeRef="java.lang.String"/>
         <encapsulatedLogic typeRef="java.lang.String">
             <formalParameter name="financialItemToClassify" typeRef="FinancialStatementItem"/>
             <context>
                 <contextEntry>
                     <variable name="class"/>
                     <literalExpression>
-                        <text>"decisions.financial.analysis.fcc$002dDt.Fcc_Dt"</text>
+                        <text>"decisions.financial.analysis.fcc$002dDt$002dAdv.Fcc_Dt_Adv"</text>
                     </literalExpression>
                 </contextEntry>
                 <contextEntry>

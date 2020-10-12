@@ -12,6 +12,7 @@
         <module>Preprocessing</module>
         <module>StatementType</module>
         <module>fcc-dt</module>
+        <module>fcc-dt-adv</module>
         <module>.decisionservice</module>
     </modules>
 

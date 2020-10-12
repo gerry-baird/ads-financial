@@ -1,0 +1,11 @@
+{
+  "financialItemToClassify": {
+    "asReportedDescription": "Limited Partner",
+    "industrial": 1,
+    "insurance": 2,
+    "bank": 3,
+    "property": 5,
+    "financial": 7,
+    "investment": 6
+  }
+}

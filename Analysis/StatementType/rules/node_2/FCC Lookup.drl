@@ -5,7 +5,7 @@
   <locale>en_US</locale>
   <definition><![CDATA[definitions 
     set 'this item' to a Financial Statement Item in decision ; 
-    set 'fcc code' to the fcc dt computed from Financial Item to Classify being 'this item';
+    set 'fcc code' to the fcc dt adv computed from Financial Item to Classify being 'this item';
 
 if 'fcc code' is defined and 'fcc code' is not empty 
 

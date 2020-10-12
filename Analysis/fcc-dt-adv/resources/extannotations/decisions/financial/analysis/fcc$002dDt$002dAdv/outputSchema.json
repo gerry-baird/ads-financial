@@ -1,0 +1,10 @@
+{
+  "id" : "output_id",
+  "name" : "output for fcc-dt-adv",
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "prediction",
+    "type" : "string",
+    "nullable" : false
+  } ]
+}

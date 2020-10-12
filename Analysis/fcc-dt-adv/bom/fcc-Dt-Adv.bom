@@ -1,0 +1,84 @@
+
+package decisions.financial.analysis.fcc$002dDt$002dAdv;
+
+
+public class Input
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{FinancialConceptDescription,Industrial,Insurance,Bank,Property,Investment,Financial}"
+        property "de.generated" "true"
+{
+    public long bank
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Bank";
+    public long financial
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Financial";
+    public string financialconceptdescription
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FinancialConceptDescription";
+    public long industrial
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Industrial";
+    public long insurance
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Insurance";
+    public long investment
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Investment";
+    public long property
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Property";
+    public Input(long bank, long financial, string financialconceptdescription, long industrial, long insurance, long investment, long property)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input()
+                property "dataio.default" "true";
+}
+
+public class Output
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+            ignoreUnknown "true"
+        }
+        property "de.generated" "true"
+{
+    public string errorCode
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error_code";
+    public string errorMessage
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error_message";
+    public boolean inError
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "in_error";
+    public string prediction
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
+    public java.lang.Double probability
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "probability";
+    public Output(string errorCode, string errorMessage, boolean inError, string prediction, java.lang.Double probability)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Output()
+                property "dataio.default" "true";
+    public static Output run(decisions.financial.analysis.fcc$002dDt$002dAdv.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.embedded.xom.PredictionCallGenerator",
+                    $target "BOM",
+                    deploymentId "fcc-dt-adv",
+                    providerName "decisions/Financial/OPS"
+                }
+                property pureFunction "true";
+    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.financial.analysis.fcc$002dDt$002dAdv.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.embedded.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    deploymentId "fcc-dt-adv",
+                    providerName "decisions/Financial/OPS"
+                }
+                property pureFunction "true";
+}
+
