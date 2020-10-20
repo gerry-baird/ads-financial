@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Copy input</name>
+  <uuid>5751ddb6-9318-4b5b-a90c-2e1c99d9b61e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+        the bank is the bank of 'Input type' , 
+        the financial is the financial of 'Input type' , 
+        the financialconceptdescription is the financialconceptdescription of 'Input type' , 
+        the industrial is the industrial of 'Input type' , 
+        the insurance is the insurance of 'Input type' , 
+        the investment is the investment of 'Input type' , 
+        the property is the property of 'Input type'  ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

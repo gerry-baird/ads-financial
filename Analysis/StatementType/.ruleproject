@@ -11,6 +11,7 @@
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:financialData#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:financialData" version="LATEST-SNAPSHOT"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:preprocessing#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:preprocessing" version="LATEST-SNAPSHOT"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:fcc-Dt-Adv#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:fcc-Dt-Adv" version="LATEST-SNAPSHOT"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.financial.analysis:complexLookup#LATEST-SNAPSHOT" packageId="decisions.financial.analysis:complexLookup" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>
@@ -33,5 +34,5 @@
   <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
     <name>deployment</name>
   </modelFolders>
-  <documentation><![CDATA[]]></documentation>
+  <documentation><![CDATA[Process balance sheet items.]]></documentation>
 </ilog.rules.studio.model.base:RuleProject>

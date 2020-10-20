@@ -98,8 +98,23 @@
                     </Partition>
                 </Condition>
                 <Condition>
-                    <Expression/>
-                    <ActionSet/>
+                    <Expression>
+                        <Param><![CDATA["FR"]]></Param>
+                    </Expression>
+                    <Partition DefId="C2">
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA["CONSOLIDATED BALANCE SHEET, OOH LA LA"]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A2">
+                                    <Expression>
+                                        <Param><![CDATA["BAL"]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression/>

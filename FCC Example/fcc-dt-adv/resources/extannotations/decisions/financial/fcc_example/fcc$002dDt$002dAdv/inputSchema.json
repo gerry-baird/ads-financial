@@ -1,0 +1,34 @@
+{
+  "id" : "input_id",
+  "name" : "input for fcc-dt-adv",
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "FinancialConceptDescription",
+    "type" : "string",
+    "nullable" : false
+  }, {
+    "name" : "Industrial",
+    "type" : "int64",
+    "nullable" : false
+  }, {
+    "name" : "Insurance",
+    "type" : "int64",
+    "nullable" : false
+  }, {
+    "name" : "Bank",
+    "type" : "int64",
+    "nullable" : false
+  }, {
+    "name" : "Property",
+    "type" : "int64",
+    "nullable" : false
+  }, {
+    "name" : "Investment",
+    "type" : "int64",
+    "nullable" : false
+  }, {
+    "name" : "Financial",
+    "type" : "int64",
+    "nullable" : false
+  } ]
+}

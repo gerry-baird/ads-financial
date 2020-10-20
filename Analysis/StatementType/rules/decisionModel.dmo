@@ -27,6 +27,7 @@
                 <rule defaultRule="false" href="node_2/Differentiated.drl" kind="BusinessRule" name="Differentiated"/>
                 <rule defaultRule="false" href="node_2/Parent%20BAL.drl" kind="BusinessRule" name="Parent BAL"/>
                 <rule defaultRule="false" href="node_2/FCC%20Lookup.drl" kind="BusinessRule" name="FCC Lookup"/>
+                <rule defaultRule="false" href="node_2/Complex%20Lookup.drl" kind="BusinessRule" name="Complex Lookup"/>
             </ruleset>
         </extensionElements>
         <variable id="node_2_ii" name="Balance Sheets" typeRef="FinancialStatementItem[]"/>
@@ -37,6 +38,9 @@
             <requiredKnowledge href="#node_7"/>
         </knowledgeRequirement>
         <knowledgeRequirement>
+            <requiredKnowledge href="#node_10"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
             <requiredKnowledge href="#node_9"/>
         </knowledgeRequirement>
     </decision>
@@ -44,8 +48,6 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="FinancialStatementItem" collection="true" name="Balance Sheets"/>
-                <input bomType="java.lang.String" collection="false" name="Income Statements"/>
-                <input bomType="java.lang.String" collection="false" name="Cash Flow"/>
                 <output bomType="FinancialStatementItem" collection="true" name="Processed Items"/>
                 <rule defaultRule="false" href="node_3/Copy%20Inputs%20to%20Outputs.drl" kind="BusinessRule" name="Copy Inputs to Outputs"/>
             </ruleset>
@@ -54,55 +56,17 @@
         <informationRequirement>
             <requiredInput href="#node_2"/>
         </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_4"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_5"/>
-        </informationRequirement>
-    </decision>
-    <decision id="node_4" name="Income Statements">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="FinancialStatementItem" collection="true" name="Input Data"/>
-                <output bomType="java.lang.String" collection="false" name="Income Statements"/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_4_ii" name="Income Statements" typeRef="java.lang.String"/>
-        <informationRequirement>
-            <requiredInput href="#node_0"/>
-        </informationRequirement>
-    </decision>
-    <decision id="node_5" name="Cash Flow">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="FinancialStatementItem" collection="true" name="Input Data"/>
-                <output bomType="java.lang.String" collection="false" name="Cash Flow"/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_5_ii" name="Cash Flow" typeRef="java.lang.String"/>
-        <informationRequirement>
-            <requiredInput href="#node_0"/>
-        </informationRequirement>
     </decision>
     <decision id="node_6" name="Out of Scope Items">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="FinancialStatementItem" collection="true" name="Balance Sheets"/>
-                <input bomType="java.lang.String" collection="false" name="Income Statements"/>
-                <input bomType="java.lang.String" collection="false" name="Cash Flow"/>
-                <output bomType="java.lang.String" collection="false" name="Out of Scope Items"/>
+                <output bomType="FinancialStatementItem" collection="true" name="Out of Scope Items"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_6_ii" name="Out of Scope Items" typeRef="java.lang.String"/>
+        <variable id="node_6_ii" name="Out of Scope Items" typeRef="FinancialStatementItem[]"/>
         <informationRequirement>
             <requiredInput href="#node_2"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_4"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_5"/>
         </informationRequirement>
     </decision>
     <businessKnowledgeModel id="node_7" name="Preprocessing">
@@ -145,6 +109,26 @@
                     <variable name="method signature"/>
                     <literalExpression>
                         <text>"run(FinancialStatementItem)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_10" name="ComplexLookup">
+        <variable name="ComplexLookup" typeRef="java.lang.String"/>
+        <encapsulatedLogic typeRef="java.lang.String">
+            <formalParameter name="input" typeRef="java.lang.String"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.financial.analysis.complexlookup.ComplexLookup"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(java.lang.String)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>

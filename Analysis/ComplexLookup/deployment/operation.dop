@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="ComplexLookup">
+  <name>complexLookup</name>
+  <uuid>00d390b9-8d1d-453b-9854-ad45edfe5076</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#52ff69b9-9d95-43d0-a9fa-e08e3d0e98a4"/>
+  <targetRuleProject href="../../ComplexLookup#ca00945c-9919-4fff-91a2-159b75f87261"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

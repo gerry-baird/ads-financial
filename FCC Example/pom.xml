@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>decisions.financial.analysis</groupId>
-    <artifactId>analysis</artifactId>
+    <groupId>decisions.financial.fcc_example</groupId>
+    <artifactId>FCCExample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>ComplexLookup</module>
-        <module>FinancialData</module>
-        <module>Preprocessing</module>
-        <module>StatementType</module>
-        <module>fcc-dt</module>
         <module>fcc-dt-adv</module>
         <module>.decisionservice</module>
     </modules>
@@ -29,15 +24,5 @@
             </plugins>
         </pluginManagement>
     </build>
-    <distributionManagement>
-        <snapshotRepository>
-            <id>gerry-decisions</id>
-            <url>http://nexus-ads-pipeline.ads-cluster-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/gerry-decisions/</url>
-        </snapshotRepository>
-        <repository>
-            <id>gerry-decisions</id>
-            <url>http://nexus-ads-pipeline.ads-cluster-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/gerry-decisions/</url>
-        </repository>
-   </distributionManagement>
 
 </project>

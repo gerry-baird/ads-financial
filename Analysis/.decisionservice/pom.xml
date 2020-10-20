@@ -13,6 +13,11 @@
     <dependencies>
         <dependency>
             <groupId>decisions.financial.analysis</groupId>
+            <artifactId>complexLookup</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>decisions.financial.analysis</groupId>
             <artifactId>financialData</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
@@ -63,6 +68,15 @@
                         </goals>
                         <configuration>
                             <artifactItems>
+                                <artifactItem>
+                                    <groupId>decisions.financial.analysis</groupId>
+                                    <artifactId>complexLookup</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>decisions.financial.analysis</groupId>
                                     <artifactId>financialData</artifactId>
